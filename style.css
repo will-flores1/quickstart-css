@@ -1,0 +1,221 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--dark-color: #2b2c33;
+	--dark-color-with-opacity: #2b2c3312;
+	--light-color: #f2f2f2;
+	--primary-color: #a40bff;
+	--secondary-color: #5884a6;
+	--white: #ffffff;
+	--highlight-color: rgb(215, 233, 255);
+	--gradient-color: linear-gradient(
+		to right,
+		rgb(170, 0, 255),
+		rgb(124, 77, 255)
+	);
+	--placeholder-color: #2b2c3350;
+
+	--shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	--shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	--shadow-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	--shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	--shadow-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+body {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.color-display {
+	display: flex;
+	gap: 4px;
+}
+.primary {
+	background-color: var(--primary-color);
+}
+.secondary {
+	background-color: var(--secondary-color);
+}
+
+/* Common mobile-first styles (applied to all screen sizes) */
+
+/* Mobile Phones */
+@media screen and (min-width: 0px) {
+	button,
+	select,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	input[type="checkbox"],
+	input[type="range"],
+	input[type="radio"] {
+		cursor: pointer;
+	}
+
+	input,
+	select {
+		display: block;
+	}
+
+	[type="checkbox"],
+	[type="radio"] {
+		display: initial;
+	}
+
+	input,
+	button,
+	textarea,
+	select {
+		color: var(--dark-color);
+		background-color: var(--light-color);
+		font-family: inherit;
+		font-size: inherit;
+		margin-right: 6px;
+		margin-bottom: 6px;
+		padding: 10px;
+		border: none;
+		border-radius: 6px;
+		outline: none;
+	}
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		background-color: var(--primary-color);
+		color: var(--light-color);
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		height: 16px;
+		width: 16px;
+	}
+	input[type="radio"] {
+		border-radius: 100%;
+	}
+
+	input {
+		vertical-align: top;
+	}
+	label {
+		vertical-align: middle;
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+	textarea {
+		display: block;
+		margin-right: 0;
+		resize: vertical;
+	}
+
+	textarea:not([cols]) {
+		/* width: 100%; */
+	}
+	textarea:not([rows]) {
+		min-height: 40px;
+		height: 100px;
+	}
+
+	select {
+		background: var(--light-color) calc(100% - 12px) 50% / 12px no-repeat;
+		padding-right: 35px;
+	}
+	select::-ms-expand {
+		display: none;
+	}
+	select[multiple] {
+		padding-right: 10px;
+		background-image: none;
+		overflow-y: auto;
+	}
+
+	input:focus,
+	select:focus,
+	button:focus,
+	textarea:focus {
+		box-shadow: 0 0 0 2px var(--placeholder-color);
+	}
+
+	input[type="checkbox"]:active,
+	input[type="radio"]:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active,
+	input[type="range"]:active,
+	button:active {
+		transform: translateY(2px);
+	}
+
+	input:disabled,
+	select:disabled,
+	button:disabled,
+	textarea:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+
+	::placeholder {
+		color: var(--placeholder-color);
+	}
+	fieldset {
+		border: 1px var(--focus) solid;
+		border-radius: 6px;
+		margin: 0;
+		margin-bottom: 12px;
+		padding: 10px;
+	}
+
+	button {
+		background-color: var(--primary-color);
+		border: 1px solid var(--primary-color);
+		border-radius: 4px;
+		color: var(--light-color);
+		font-size: 14px;
+		padding: 4px 52px;
+	}
+
+	button.outline {
+		background-color: transparent;
+		border: 1px solid var(--primary-color);
+		border-radius: 4px;
+		color: var(--primary-color);
+		font-size: 14px;
+		padding: 4px 52px;
+	}
+}
+
+/* ONLY PHONES */
+@media screen and (max-width: 768px) {
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+	/* CSS rules for tablets */
+	.logo {
+		height: 50%;
+		width: 50%;
+		aspect-ratio: 1.29;
+		margin: -3rem 0 -6rem 0;
+	}
+
+	.flex {
+		margin: 1rem auto;
+		width: 50%;
+	}
+
+	.round {
+		display: none;
+	}
+}
+
+/* Desktops */
+@media screen and (min-width: 1200px) {
+	/* CSS rules for desktops */
+}
