@@ -143,8 +143,7 @@ h6 {
 	input[type="button"] {
 		background-color: var(--primary-color);
 		color: var(--light-color);
-		padding-right: 30px;
-		padding-left: 30px;
+		padding: 8px 52px;
 	}
 
 	input[type="checkbox"],
