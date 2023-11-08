@@ -8,111 +8,121 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		Colors
-		<div class="color-display">
-			<div style="height: 40px; width: 40px" class="primary"></div>
-			<div style="height: 40px; width: 40px" class="secondary"></div>
+		<h1>Style Guide</h1>
+		<div>
+			<h2>Colors</h2>
+			<div class="color-display">
+				<div style="height: 40px; width: 40px" class="primary"></div>
+				<div style="height: 40px; width: 40px" class="secondary"></div>
+			</div>
 		</div>
 
-		Typography
-		<h1>Heading 1</h1>
-		<h2>Heading 2</h2>
-		<h3>Heading 3</h3>
-		<h4>Heading 4</h4>
-		<h5>Heading 5</h5>
-		<h6>Heading 6</h6>
-		Paragraph
-		<p>
-			Far far away, behind the word mountains, far from the countries Vokalia
-			and Consonantia, there live the blind texts. Separated they live in
-			Bookmarksgrove right at the coast of the Semantics, a large language
-			ocean. A small river named Duden flows by their place and supplies it
-			with the necessary regelialia.
-		</p>
+		<div>
+			<h2>Headings</h2>
+			<div class="display">Display</div>
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</div>
 
-		Caption
-		<br />
-		<caption>
-			A wonderful serenity has taken possession of my entire soul, like these
-			sweet mornings of spring which I enjoy with my whole heart.
-		</caption>
+		<div>
+			<h2>Paragraph</h2>
+			<p>
+				Far far away, <strong>behind</strong> the word <em>mountains</em>,
+				far from the countries Vokalia and Consonantia, there live the blind
+				texts. Separated they live in Bookmarksgrove right at the coast of
+				the Semantics, a large language ocean. A small river named Duden
+				flows by their place and supplies it with the necessary regelialia.
+			</p>
+		</div>
 
-		<br />
-		Link
-		<br />
-		<a href="#">Link</a>
-		<br />
-		Button
-		<br />
-		<button class="">Primary Button</button>
-		<button class="outline">Secondary Button</button>
+		<div>
+			<h2>Caption</h2>
+			<caption>
+				A wonderful serenity has taken possession of my entire soul, like
+				these sweet mornings of spring which I enjoy with my whole heart.
+			</caption>
+		</div>
 
-		<br />
-		Form
-		<form>
-			<label for="email">Email</label>
-			<input
-				type="email"
-				name="email"
-				id="email"
-				placeholder="john.doe@gmail.com" />
-			<label for="id">User id (read only)</label>
-			<input
-				readonly=""
-				name="id"
-				id="id"
-				value="04D6H89Z"
-				data-last-active-input="" />
-			<label for="disabled">Random disabled input</label>
-			<input
-				disabled=""
-				name="disabled"
-				id="disabled"
-				placeholder="Because why not?" />
-			<label for="about">About me</label>
-			<textarea
-				name="about"
-				id="about"
-				placeholder="I am a textarea..."></textarea>
-			<label>Choose a Doe:</label>
-			<div>
+		<div>
+			<h2>Link</h2>
+			<a href="#">Link</a>
+		</div>
+
+		<div>
+			<h2>Button</h2>
+			<button class="">Primary Button</button>
+			<button class="outline">Secondary Button</button>
+		</div>
+
+		<div>
+			<h2>Form</h2>
+			<form>
+				<label for="email">Email</label>
 				<input
-					type="radio"
-					id="john"
-					name="drone"
-					value="john"
-					checked="" />
-				<label for="john">John Doe</label>
-			</div>
-			<div>
+					type="email"
+					name="email"
+					id="email"
+					placeholder="john.doe@gmail.com" />
+				<label for="id">User id (read only)</label>
 				<input
-					type="radio"
-					id="jane"
-					name="drone"
-					value="jane"
-					checked="" />
-				<label for="jane">Jane Doe</label>
-			</div>
-			<div>
+					readonly=""
+					name="id"
+					id="id"
+					value="04D6H89Z"
+					data-last-active-input="" />
+				<label for="disabled">Random disabled input</label>
 				<input
-					type="radio"
-					id="johnny"
-					name="drone"
-					value="johnny"
-					checked="" />
-				<label for="johnny">Johnny Doe</label>
-			</div>
-			<select name="select" id="select">
-				<option value="option1">Option 1</option>
-				<option value="option2">Option 2</option>
-				<option value="option3">Option 3</option>
-			</select>
-
-			<br />
-			<input type="checkbox" name="remember" id="remember" checked="" />
-			<label for="remember">Remember me</label>
-			<input type="submit" value="Submit" />
-			<input type="reset" value="Reset" />
-		</form>
+					disabled=""
+					name="disabled"
+					id="disabled"
+					placeholder="Because why not?" />
+				<label for="about">About me</label>
+				<textarea
+					name="about"
+					id="about"
+					placeholder="I am a textarea..."></textarea>
+				<label>Choose a Doe:</label>
+				<div>
+					<input
+						type="radio"
+						id="john"
+						name="drone"
+						value="john"
+						checked="" />
+					<label for="john">John Doe</label>
+				</div>
+				<div>
+					<input
+						type="radio"
+						id="jane"
+						name="drone"
+						value="jane"
+						checked="" />
+					<label for="jane">Jane Doe</label>
+				</div>
+				<div>
+					<input
+						type="radio"
+						id="johnny"
+						name="drone"
+						value="johnny"
+						checked="" />
+					<label for="johnny">Johnny Doe</label>
+				</div>
+				<select name="select" id="select">
+					<option value="option1">Option 1</option>
+					<option value="option2">Option 2</option>
+					<option value="option3">Option 3</option>
+				</select>
+				<input type="checkbox" name="remember" id="remember" checked="" />
+				<label for="remember">Remember me</label>
+				<input type="submit" value="Submit" />
+				<input type="reset" value="Reset" />
+			</form>
+		</div>
 	</body>
 </html>
